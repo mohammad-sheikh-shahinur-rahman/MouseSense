@@ -67,13 +67,13 @@ With triple connectivity—**Wi-Fi Auto-Discovery**, standard **Bluetooth HID**,
 
 ## 📥 Deliverables & Downloads
 
+* **GitHub Release Page:** [MouseSense v2.0.0 Release](https://github.com/mohammad-sheikh-shahinur-rahman/MouseSense/releases/tag/v2.0.0)
 * **Android Mobile App (APK):**
-  * File: [`MouseSense.apk`](file:///J:/Mousedroid/MouseSense.apk)
-  * Location: `J:\Mousedroid\MouseSense.apk` (13.2 MB)
-* **Windows PC Server (Standalone Distribution):**
-  * Folder: [`MouseSense_PC`](file:///J:/Mousedroid/MouseSense_PC/)
-  * Executable: [`MouseSense.exe`](file:///J:/Mousedroid/MouseSense_PC/MouseSense.exe)
-  * Location: `J:\Mousedroid\MouseSense_PC\` (All 33 required runtime DLLs, ADB, and icons included)
+  * Direct Download: [MouseSense.apk (v2.0.0)](https://github.com/mohammad-sheikh-shahinur-rahman/MouseSense/releases/download/v2.0.0/MouseSense.apk)
+  * Local File: [`MouseSense.apk`](file:///J:/Mousedroid/MouseSense.apk) (13.2 MB)
+* **Windows PC Server (Portable Distribution):**
+  * Direct Download: [MouseSense_v2.0_Windows_x64.zip](https://github.com/mohammad-sheikh-shahinur-rahman/MouseSense/releases/download/v2.0.0/MouseSense_v2.0_Windows_x64.zip)
+  * Local Folder: [`MouseSense_PC`](file:///J:/Mousedroid/MouseSense_PC/) | Executable: [`MouseSense.exe`](file:///J:/Mousedroid/MouseSense_PC/MouseSense.exe)
 
 ---
 
