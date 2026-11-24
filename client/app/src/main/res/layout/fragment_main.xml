@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0B0F19"
+        android:padding="20dp">
+
+        <!-- Top Branding Section -->
+        <ImageView
+            android:id="@+id/imgBrandLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="@+id/txtAppName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/txtAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="MouseSense"
+            android:textColor="#F8FAFC"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtCompanyBadge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBrandLogo" />
+
+        <TextView
+            android:id="@+id/txtCompanyBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#162036"
+            android:paddingStart="14dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="4dp"
+            android:text="IT Amadersomaj Inc"
+            android:textColor="#00E5FF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtTagline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAppName" />
+
+        <TextView
+            android:id="@+id/txtTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Wireless PC Mouse, Keyboard &amp; Trackpad"
+            android:textColor="#94A3B8"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtSectionTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCompanyBadge" />
+
+        <!-- Section Title -->
+        <TextView
+            android:id="@+id/txtSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:letterSpacing="0.08"
+            android:text="CHOOSE CONNECTION MODE"
+            android:textColor="#64748B"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnConnectSV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTagline" />
+
+        <!-- 1. Wi-Fi Server Button (Auto-Discovery) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConnectSV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#162036"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:text="Wi-Fi Mode (Auto-Detect)\nAuto-discovers PC on the same Wi-Fi network"
+            android:textColor="#F8FAFC"
+            android:textSize="14sp"
+            app:cornerRadius="14dp"
+            app:icon="@drawable/usb"
+            app:iconGravity="textStart"
+            app:iconPadding="16dp"
+            app:iconSize="28dp"
+            app:iconTint="#00E5FF"
+            app:layout_constraintBottom_toTopOf="@+id/btnConnectBT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSectionTitle"
+            app:strokeColor="#233352"
+            app:strokeWidth="1.5dp" />
+
+        <!-- 2. Bluetooth Connect Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConnectBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#162036"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:text="Bluetooth Mode\nConnect to paired PC"
+            android:textColor="#F8FAFC"
+            android:textSize="14sp"
+            app:cornerRadius="14dp"
+            app:icon="@drawable/baseline_bluetooth_24"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconSize="28dp"
+            app:iconTint="#3B82F6"
+            app:layout_constraintBottom_toTopOf="@+id/txtFooter"
+            app:layout_constraintEnd_toStartOf="@+id/btnPairBT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnConnectSV"
+            app:strokeColor="#233352"
+            app:strokeWidth="1.5dp" />
+
+        <!-- 3. Bluetooth Pair Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPairBT"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:backgroundTint="#162036"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Pair\nNew"
+            android:textAlignment="center"
+            android:textColor="#00E5FF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:cornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnConnectBT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnConnectBT"
+            app:layout_constraintTop_toTopOf="@+id/btnConnectBT"
+            app:strokeColor="#00E5FF"
+            app:strokeWidth="1dp" />
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/txtFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Powered by IT Amadersomaj Inc • Low Latency"
+            android:textColor="#64748B"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

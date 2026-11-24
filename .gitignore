@@ -1,0 +1,18 @@
+# Build directories
+server/build/
+server/out/
+server/.vs/
+client/build/
+client/app/build/
+client/app/release/
+client/.gradle/
+
+# IDE and local configuration
+client/local.properties
+client/.idea/
+.vs/
+.vscode/
+
+# Logs and temporary files
+*.log
+app.log

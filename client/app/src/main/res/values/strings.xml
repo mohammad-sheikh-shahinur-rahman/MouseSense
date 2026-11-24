@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MouseSense</string>
+    <string name="company_name">IT Amadersomaj Inc</string>
+    <string name="app_tagline">Smart Wireless PC Mouse &amp; Keyboard</string>
+    <string name="connectionFailedUSB">Make sure MouseSense Server is running on your computer.</string>
+    <string name="connectionFailedWIFI">Make sure MouseSense Server is running and both devices are on the same Wi-Fi.</string>
+    <string name="connectionLost">Connection to PC interrupted!</string>
+    <string name="connectionFailed">Connection failed!</string>
+</resources>
